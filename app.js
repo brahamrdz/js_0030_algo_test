@@ -32,7 +32,7 @@ export function mayorDeTresNumeros(a, b, c) {
 // 4 funcion para devolver la suma de los numero entre a y b
 export function sumaEntreNumeros(a, b) {
   let suma = 0;
-  for (let i = a+1; i < b; i++) {
+  for (let i = a; i <= b; i++) {
       suma += i;
   }
   
