@@ -22,12 +22,12 @@ export function mayorDeTresNumeros(a, b, c) {
     if (a > c)
       return a;
     else
-      return c:
+      return c;
   else
     if(b > c)
-      return b:
+      return b;
     else
-      return c:
+      return c;
 }
 // 4 funcion para devolver la suma de los numero entre a y b
 export function sumaEntreNumeros(a, b) {
