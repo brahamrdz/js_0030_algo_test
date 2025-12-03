@@ -1,12 +1,12 @@
 // 1 funcion para devolver los numeros pares entre a y b
 export function numerosPares(a, b) {
-  // let resultado = ""
-  // for (let i = a; i <= b; i++) {
-  //   if (i % 2 == 0) {
-  //     resultado += i + ";"
-  //   }
-  // }
-  // return resultado
+  let resultado = ""
+  for (let i = a; i <= b; i++) {
+    if (i % 2 == 0) {
+      resultado += i + ";"
+    }
+  }
+  return resultado
 }
 // 2 funcion para hacer la tabla de multiplicar de un numero
 export function tablaMultiplicar(numero) {
