@@ -10,15 +10,24 @@ export function numerosPares(a, b) {
 }
 // 2 funcion para hacer la tabla de multiplicar de un numero
 export function tablaMultiplicar(numero) {
-  // let resultado = ""
-  // for (let i = 0; i <= 10; i++) {
-  //   resultado += numero + "*" + i + "=" + numero * i + ";"
-  // }
-  // return resultado
+  let resultado = ""
+  for (let i = 0; i <= 10; i++) {
+    resultado += numero + "*" + i + "=" + numero * i + ";"
+  }
+  return resultado
 }
 // 3 funcion para devolver el mayor de tres numeros
 export function mayorDeTresNumeros(a, b, c) {
-  return 0
+  if (a > b) 
+    if (a > c)
+      return a;
+    else
+      return c:
+  else
+    if(b > c)
+      return b:
+    else
+      return c:
 }
 // 4 funcion para devolver la suma de los numero entre a y b
 export function sumaEntreNumeros(a, b) {
