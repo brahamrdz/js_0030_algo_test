@@ -1,73 +1,144 @@
-bun test v1.0.30 (1424a196)
+bun test v1.3.2 (b131639c)
 
 app.test.js:
-(pass) sum elementos de una array [0.10ms]
-(pass) sum elementos de una array vacio [0.02ms]
-(pass) mayores a un numero [0.07ms]
-(pass) mayores a un numero vacio [0.01ms]
-69 |         ];
-70 |     const num = 30;
-71 |     // act
-72 |     const result = mayoresEdad(personas, num);
-73 |     // assert
-74 |     expect(result).toEqual([ { nombre: 'Laura', edad: 40 }]);
-         ^
-error: expect(received).toEqual(expected)
-
-Expected: [32m[
-  {
-    nombre: "Laura",
-    edad: 40,
-  }
-][0m
-Received: [31mundefined[0m
-
-      at /Users/joseviejo/curso/codecripto/labs/js_basico_test/app.test.js:74:5
-(fail) mayores de edad [0.17ms]
-85 |         { nombre: 'Laura', edad: 40 }
-86 |     ];
-87 |     // act
-88 |     const result = mediaEdad(personas);
-89 |     // assert
-90 |     expect(result).toBe(23.333333333333332);
-         ^
+21 |     const b = 10
+22 |     const expected = "2;4;6;8;10;"
+23 |     // act
+24 |     const result = numerosPares(a, b);
+25 |     // assert
+26 |     expect(result).toBe(expected);
+                        ^
 error: expect(received).toBe(expected)
 
-Expected: 23.333333333333332
+Expected: "2;4;6;8;10;"
 Received: undefined
 
-      at /Users/joseviejo/curso/codecripto/labs/js_basico_test/app.test.js:90:5
-(fail) media de edades [0.09ms]
-101 |         { nombre: 'Laura', edad: 40 }
-102 |     ];
-103 |     // act
-104 |     const result = mayoresIgualMedia(personas);
-105 |     // assert
-106 |     expect(result).toEqual([ { nombre: 'Pedro', edad: 30 }, { nombre: 'Maria', edad: 25 }, { nombre: 'Laura', edad: 40 }]);
-          ^
-error: expect(received).toEqual(expected)
+      at <anonymous> (/home/anarquimia/gitLearning/firstTry/js_0030_algo_test/app.test.js:26:20)
+(fail) numeros pares [0.77ms]
+32 |     const c = 5;
+33 | 
+34 |     // act
+35 |     const result = mayorDeTresNumeros(a, b, c);
+36 |     // assert
+37 |     expect(result).toBe(5);
+                        ^
+error: expect(received).toBe(expected)
 
-Expected: [32m[
-  {
-    nombre: "Pedro",
-    edad: 30,
-  }, {
-    nombre: "Maria",
-    edad: 25,
-  }, {
-    nombre: "Laura",
-    edad: 40,
-  }
-][0m
-Received: [31mundefined[0m
+Expected: 5
+Received: 0
 
-      at /Users/joseviejo/curso/codecripto/labs/js_basico_test/app.test.js:106:5
-(fail) mayores o iguales a la media [0.13ms]
+      at <anonymous> (/home/anarquimia/gitLearning/firstTry/js_0030_algo_test/app.test.js:37:20)
+(fail) mayor de 3 numeros [0.14ms]
+42 |     const b = 4;
+43 | 
+44 |     // act
+45 |     const result = sumaEntreNumeros(a, b);
+46 |     // assert
+47 |     expect(result).toBe(9);
+                        ^
+error: expect(received).toBe(expected)
 
-app2.test.js:
-(pass) mayor de 3 numeros [0.43ms]
+Expected: 9
+Received: 0
 
- 5 pass
- 3 fail
- 8 expect() calls
-Ran 8 tests across 2 files. [10.00ms]
+      at <anonymous> (/home/anarquimia/gitLearning/firstTry/js_0030_algo_test/app.test.js:47:20)
+(fail) suma entre numeros [0.15ms]
+52 |     const b = 10;
+53 | 
+54 |     // act
+55 |     const result = numerosParesCount(a, b);
+56 |     // assert
+57 |     expect(result).toBe(5);
+                        ^
+error: expect(received).toBe(expected)
+
+Expected: 5
+Received: 0
+
+      at <anonymous> (/home/anarquimia/gitLearning/firstTry/js_0030_algo_test/app.test.js:57:20)
+(fail) numeros pares count [0.18ms]
+70 |     const j = 20;
+71 | 
+72 |     // act
+73 |     const result = mediaDeNotas(a, b, c, d, e, f, g, h, i, j);
+74 |     // assert
+75 |     expect(result).toBe(11);
+                        ^
+error: expect(received).toBe(expected)
+
+Expected: 11
+Received: undefined
+
+      at <anonymous> (/home/anarquimia/gitLearning/firstTry/js_0030_algo_test/app.test.js:75:20)
+(fail) media de notas [0.16ms]
+83 |     const n = 6;
+84 | 
+85 |     // act
+86 |     const result = combinacionesDeTresNumeros(a, b, c, n);
+87 |     // assert
+88 |     expect(result).toBe(1);
+                        ^
+error: expect(received).toBe(expected)
+
+Expected: 1
+Received: 0
+
+      at <anonymous> (/home/anarquimia/gitLearning/firstTry/js_0030_algo_test/app.test.js:88:20)
+(fail) combinaciones de tres numeros [0.09ms]
+ 96 |     const n = 10;
+ 97 | 
+ 98 |     // act
+ 99 |     const result = combinacionesDeCuatroNumeros(a, b, c, d, n);
+100 |     // assert
+101 |     expect(result).toBe(1);
+                         ^
+error: expect(received).toBe(expected)
+
+Expected: 1
+Received: 0
+
+      at <anonymous> (/home/anarquimia/gitLearning/firstTry/js_0030_algo_test/app.test.js:101:20)
+(fail) combinaciones de cuatro numeros [0.13ms]
+105 |     const n = 7;
+106 | 
+107 |     // act
+108 |     const result = esPrimo(n);
+109 |     // assert
+110 |     expect(result).toBe(true);
+                         ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: 0
+
+      at <anonymous> (/home/anarquimia/gitLearning/firstTry/js_0030_algo_test/app.test.js:110:20)
+(fail) es primo [0.09ms]
+114 |     const numero = 5;
+115 |     const expected = "5*0=0;5*1=5;5*2=10;5*3=15;5*4=20;5*5=25;5*6=30;5*7=35;5*8=40;5*9=45;5*10=50;"
+116 |     // act
+117 |     const result = tablaMultiplicar(numero);
+118 |     // assert
+119 |     expect(result).toBe(expected);
+                         ^
+error: expect(received).toBe(expected)
+
+Expected: "5*0=0;5*1=5;5*2=10;5*3=15;5*4=20;5*5=25;5*6=30;5*7=35;5*8=40;5*9=45;5*10=50;"
+Received: undefined
+
+      at <anonymous> (/home/anarquimia/gitLearning/firstTry/js_0030_algo_test/app.test.js:119:20)
+(fail) tabla multiplicar [0.10ms]
+120 | });
+121 | test('factorial', () => {
+122 |     // arrange
+123 |     const n = 5;
+124 |     // act
+125 |     const result = factorial(n);
+                         ^
+ReferenceError: factorial is not defined
+      at <anonymous> (/home/anarquimia/gitLearning/firstTry/js_0030_algo_test/app.test.js:125:20)
+(fail) factorial [0.19ms]
+
+ 0 pass
+ 10 fail
+ 9 expect() calls
+Ran 10 tests across 1 file. [18.00ms]
